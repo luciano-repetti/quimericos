@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./recursos/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quimericos | Sitio Oficial</title>
+
+    <!-- GLightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home"><img src="./recursos/img/logo.png" alt="Logo Quimericos" class="logo-mobile"></a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul>
+                <li><a href="#members">Integrantes</a></li>
+                <li><a href="#about_me">Sobre nosotros</a></li>
+                <li class="logo"><a href="#home"><img src="./recursos/img/logo.png" alt="Logo Quimericos"></a></li>
+                <li><a href="#galery">Fotos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container_gif_animation" id="home">
+        <div class="gif_animation">
+            <video src="./recursos/videos/logo_animacion.mp4" autoplay loop muted></video>
+        </div>
+    </section>
+
+    <section class="container_members" id="members">
+        <h2>Integrantes</h2>
+        <div class="members">
+            <div class="card_member">
+                <div class="container_image">
+                    <img class="image_member" src="./recursos/img/luk1.JPG" alt="">
+                    <p>Luka Balmaceda</p>
+                </div>
+                <div class="container_text">
+                    <p>Baterista y cofundador de la banda junto al guitarrista, toca de forma autodidacta desde hace más
+                        de cuatro años. Tiene 20 años, estudia Diseño Gráfico y trabaja como diseñador.</p>
+                    <div class="container_network_social">
+                        <a href="https://www.instagram.com/lukabalmaceda/" target="_blank">
+                            <img src="./recursos/img/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_member">
+                <div class="container_image">
+                    <img class="image_member" src="./recursos/img/gabi1.jpg" alt="">
+                    <p>Gabriel Osuna</p>
+                </div>
+                <div class="container_text">
+                    <p>Guitarrista y cofundador de la banda junto al baterista, toca de forma autodidacta desde que
+                        tiene memoria. Tiene 21 años, estudia y trabaja en el taller de su papá.</p>
+                    <div class="container_network_social">
+                        <a href="https://www.instagram.com/gabi_osuna47/" target="_blank">
+                            <img src="./recursos/img/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_member">
+                <div class="container_image">
+                    <img class="image_member" src="./recursos/img/mili1.JPG" alt="">
+                    <p>Milagros Vera</p>
+                </div>
+                <div class="container_text">
+                    <p>Es la vocalista de la banda y tercer integrante. Con formación en canto, su talento destaca en el
+                        escenario. Tiene 21 años, estudia y tiene un emprendimiento.</p>
+                    <div class="container_network_social">
+                        <a href="https://www.instagram.com/mixel.s1/" target="_blank">
+                            <img src="./recursos/img/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_member">
+                <div class="container_image">
+                    <img class="image_member" src="./recursos/img/alvaro1.jpg" alt="">
+                    <p>Álvaro Espinoza</p>
+                </div>
+                <div class="container_text">
+                    <p>Es el bajista de la banda y el último integrante incorporado. Se desempeña con el bajo y la
+                        guitarra desde hace años. Tiene 21 años y estudia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container_aboutme" id="about_me">
+        <div class="aboutme">
+            <img class="image_logo" src="./recursos/img/logo.png" alt="Logo Quimericos">
+            <div class="container_text">
+                <h2>Sobre nosotros</h2>
+                <p>Somos Quimericos, una banda de rock nacida durante los primeros meses del año 2024. Somos una banda
+                    que reúne amigos de la primaria después de muchos años.</p>
+                <p>En nuestras canciones tenemos un estilo variado, en estos momentos nos centramos principalmente en
+                    realizar covers de rock nacional, de bandas con un estilo potente como Rata Blanca, Riff, Pilsen,
+                    Trotsky Vengarán y un estilo más tranquilo de bandas como Ciro y Los Persas, Airbag, Virus, entre
+                    otras.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-container" id="galery">
+        <h2>Galeria de fotos</h2>
+        <div class="gallery" id="gallery"></div>
+        <button class="view-all" id="viewAll">Ver todas las imágenes</button>
+    </section>
+
+    <section class="container_contact" id="contact">
+        <div class="contact">
+            <form>
+                <h2>Contacto</h2>
+                <label>
+                    Nombre completo
+                    <input type="text" name="full_name" placeholder="Ingrese nombre y apellido" id="">
+                </label>
+                <label>
+                    Email
+                    <input type="text" name="email" placeholder="Ingrese email" id="">
+                </label>
+                <label>
+                    Mensaje
+                    <textarea name="" id="" placeholder="Ingrese su mensaje"></textarea>
+                </label>
+                <button type="submit">¡Enviar mensaje!</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_footer">
+            <div class="logo">
+                <img class="image_logo" src="./recursos/img/logo.png" alt="Logo Quimericos">
+                <h2>Quimericos</h2>
+            </div>
+            <p>&copy; <span id="year_copyright"></span> Quimericos. Todos los derechos reservados.</p>
+            <a href="https://www.instagram.com/quimeric0s/" class="network_social_instagram" target="_blank">
+                <img src="./recursos/img/instagram.png" alt="">
+                quimeric0s</a>
+        </div>
+    </footer>
+
+
+    <!-- GLightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+
+    <script>
+        class Gallery {
+            constructor() {
+                // Simular datos de un JSON (esto se reemplazaría con tus datos reales)
+                this.images = [
+                    {
+                        src: './recursos/img_galery/1.PNG',
+                        title: 'FECHA 1 | IFDC - 09/07/2024',
+                        description: 'Debut de Quimericos, en su primera fecha en el Instituto de Formación Docente Continua.'
+                    },
+                    {
+                        src: './recursos/img_galery/2.JPG',
+                        title: 'FECHA 2 | LA LLAVE - 03/08/2024',
+                        description: 'Segunda fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela de Arte La Llave.'
+                    },
+                    {
+                        src: './recursos/img_galery/3.JPG',
+                        title: 'FECHA 4 | ISP - 08/11/2024',
+                        description: 'Cuarta fecha de la banda, en este caso nos presentamos para tocar en la "Expo de Carreras 2024" del Instituto Superior Patagónico en el módulo terciario'
+                    },
+                    {
+                        src: './recursos/img_galery/4.JPG',
+                        title: 'FECHA 5 | ESC. 328 - 16/11/2024',
+                        description: 'Quinta fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela N°328, en el festival "Arte, Cultura y Color".'
+                    },
+                    {
+                        src: './recursos/img_galery/5.JPG',
+                        title: 'FECHA 2 | LA LLAVE - 03/08/2024',
+                        description: 'Segunda fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela de Arte La Llave.'
+                    },
+                    {
+                        src: './recursos/img_galery/6.JPG',
+                        title: 'FECHA 2 | LA LLAVE - 03/08/2024',
+                        description: 'Segunda fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela de Arte La Llave.'
+                    },
+                    {
+                        src: './recursos/img_galery/7.JPG',
+                        title: 'FECHA 2 | LA LLAVE - 03/08/2024',
+                        description: 'Segunda fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela de Arte La Llave.'
+                    },
+                    {
+                        src: './recursos/img_galery/8.JPG',
+                        title: 'FECHA 2 | LA LLAVE - 03/08/2024',
+                        description: 'Segunda fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela de Arte La Llave.'
+                    },
+                    {
+                        src: './recursos/img_galery/9.JPG',
+                        title: 'FECHA 4 | ISP - 08/11/2024',
+                        description: 'Cuarta fecha de la banda, en este caso nos presentamos para tocar en la "Expo de Carreras 2024" del Instituto Superior Patagónico en el módulo terciario'
+                    },
+                    {
+                        src: './recursos/img_galery/10.JPG',
+                        title: 'FECHA 4 | ISP - 08/11/2024',
+                        description: 'Cuarta fecha de la banda, en este caso nos presentamos para tocar en la "Expo de Carreras 2024" del Instituto Superior Patagónico en el módulo terciario'
+                    },
+                    {
+                        src: './recursos/img_galery/11.JPG',
+                        title: 'FECHA 4 | ISP - 08/11/2024',
+                        description: 'Cuarta fecha de la banda, en este caso nos presentamos para tocar en la "Expo de Carreras 2024" del Instituto Superior Patagónico en el módulo terciario'
+                    },
+                    {
+                        src: './recursos/img_galery/12.JPG',
+                        title: 'FECHA 4 | ISP - 08/11/2024',
+                        description: 'Cuarta fecha de la banda, en este caso nos presentamos para tocar en la "Expo de Carreras 2024" del Instituto Superior Patagónico en el módulo terciario'
+                    },
+                    {
+                        src: './recursos/img_galery/13.JPG',
+                        title: 'FECHA 5 | ESC. 328 - 16/11/2024',
+                        description: 'Quinta fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela N°328, en el festival "Arte, Cultura y Color".'
+                    },
+                    {
+                        src: './recursos/img_galery/14.JPG',
+                        title: 'FECHA 5 | ESC. 328 - 16/11/2024',
+                        description: 'Quinta fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela N°328, en el festival "Arte, Cultura y Color".'
+                    },
+                    {
+                        src: './recursos/img_galery/15.JPG',
+                        title: 'FECHA 5 | ESC. 328 - 16/11/2024',
+                        description: 'Quinta fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela N°328, en el festival "Arte, Cultura y Color".'
+                    },
+                    {
+                        src: './recursos/img_galery/16.JPG',
+                        title: 'FECHA 5 | ESC. 328 - 16/11/2024',
+                        description: 'Quinta fecha de la banda, en esta oportunidad tuvimos la experiencia de presentarnos en La Escuela N°328, en el festival "Arte, Cultura y Color".'
+                    },
+
+
+                ];
+
+                this.previewImages = 12;
+                this.initializeGallery();
+            }
+
+            initializeGallery() {
+                this.renderGallery();
+                this.initializeLightbox();
+                this.setupEventListeners();
+            }
+
+            renderGallery() {
+                const gallery = document.getElementById('gallery');
+                const displayImages = this.images.slice(0, this.previewImages);
+
+                displayImages.forEach((image, index) => {
+                    const item = this.createGalleryItem(image, index);
+                    gallery.appendChild(item);
+                });
+
+                // Ocultar el botón si no hay más imágenes que el límite de preview
+                const viewAllButton = document.getElementById('viewAll');
+                viewAllButton.style.display = this.images.length <= this.previewImages ? 'none' : 'block';
+            }
+
+            createGalleryItem(image, index) {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+
+                const link = document.createElement('a');
+                link.href = image.src;
+                link.className = 'glightbox';
+                link.dataset.gallery = 'gallery';
+                link.dataset.glightbox = `title: ${image.title}; description: ${image.description}`;
+
+                const thumbnailContainer = document.createElement('div');
+                thumbnailContainer.className = 'thumbnail-container';
+
+                const img = document.createElement('img');
+                img.src = image.src;
+                img.alt = image.title;
+                img.loading = 'lazy';
+
+                const caption = document.createElement('div');
+                caption.className = 'gallery-item-caption';
+                caption.textContent = image.title;
+
+                thumbnailContainer.appendChild(img);
+                link.appendChild(thumbnailContainer);
+                item.appendChild(link);
+                item.appendChild(caption);
+
+                return item;
+            }
+
+            initializeLightbox() {
+                // Crear elementos ocultos para todas las imágenes que no están en la portada
+                const hiddenContainer = document.createElement('div');
+                hiddenContainer.style.display = 'none';
+
+                // Agregar todas las imágenes que no están en la portada al lightbox
+                if (this.images.length > this.previewImages) {
+                    this.images.slice(this.previewImages).forEach(image => {
+                        const link = document.createElement('a');
+                        link.href = image.src;
+                        link.className = 'glightbox';
+                        link.dataset.gallery = 'gallery';
+                        link.dataset.glightbox = `title: ${image.title}; description: ${image.description}`;
+                        hiddenContainer.appendChild(link);
+                    });
+
+                    document.body.appendChild(hiddenContainer);
+                }
+
+                this.lightbox = GLightbox({
+                    touchNavigation: true,
+                    loop: true,
+                    autoplayVideos: false,
+                    preload: true,
+                    moreLength: 0, // No mostrar el contador "+X more"
+                    slideEffect: 'slide'
+                });
+            }
+
+            setupEventListeners() {
+                const viewAllButton = document.getElementById('viewAll');
+                viewAllButton.addEventListener('click', () => {
+                    // Abrir el lightbox en la primera imagen
+                    const firstGalleryLink = document.querySelector('.glightbox');
+                    firstGalleryLink.click();
+                });
+            }
+        }
+
+        // Inicializar la galería cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', () => {
+            new Gallery();
+        });
+    </script>
+
+    <script>
+        document.getElementById("year_copyright").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menuToggle');
+            const navUl = document.querySelector('header nav ul');
+            const navLinks = document.querySelectorAll('header nav ul li a');
+
+            menuToggle.addEventListener('click', function () {
+                navUl.classList.toggle('active');
+            });
+
+            // Cerrar menú al hacer click en un enlace
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navUl.classList.remove('active');
+                });
+            });
+
+            // Cerrar menú al hacer scroll
+            window.addEventListener('scroll', () => {
+                if (navUl.classList.contains('active')) {
+                    navUl.classList.remove('active');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
