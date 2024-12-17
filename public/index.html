@@ -30,7 +30,8 @@
 
     <section class="container_gif_animation" id="home">
         <div class="gif_animation">
-            <video src="/recursos/videos/logo_animacion.mp4" autoplay loop muted></video>
+            <video src="recursos/videos/logo_animacion.mp4" autoplay loop muted playsinline webkit-playsinline>
+            </video>
         </div>
     </section>
 
@@ -375,6 +376,41 @@
             });
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('.gif_animation video');
+
+            // Intenta reproducir el video
+            const playVideo = function () {
+                const playPromise = video.play();
+
+                if (playPromise !== undefined) {
+                    playPromise
+                        .then(() => {
+                            // Video está reproduciendo
+                        })
+                        .catch(error => {
+                            // Auto-play fue prevenido
+                            console.log("Reproducción automática prevenida:", error);
+
+                            // Añadir un botón de play como fallback
+                            const playButton = document.createElement('button');
+                            playButton.innerHTML = '▶ Play';
+                            playButton.className = 'video-play-button';
+                            video.parentElement.appendChild(playButton);
+
+                            playButton.addEventListener('click', () => {
+                                video.play();
+                                playButton.style.display = 'none';
+                            });
+                        });
+                }
+            };
+
+            playVideo();
+        });
     </script>
 </body>
 
